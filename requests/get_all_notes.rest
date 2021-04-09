@@ -8,3 +8,11 @@ content-type: application/json
 {
   "content": "new created content"
 }
+
+### 
+GET http://localhost:3001/api/notes/606fbbce99bdcf2490f8f39b
+# Content-Type: application/json
+
+# {
+#   "content": "modified content"
+# }
