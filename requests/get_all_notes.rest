@@ -6,5 +6,5 @@ POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
 
 {
-  "content": "sample test "
+  "content": "new created content"
 }
