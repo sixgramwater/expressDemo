@@ -1,15 +1,17 @@
+### get all notes
 GET http://localhost:3001/api/notes
 
-###
-
+### create new note 
 POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
 
 {
-  "content": "new created content"
+  "content": "new created note by user",
+  "userId": "607002d4f68e0733dc7a1b13",
+  "important": "true"
 }
 
-### 
+### get specific note
 GET http://localhost:3001/api/notes/606fbbce99bdcf2490f8f39b
 # Content-Type: application/json
 

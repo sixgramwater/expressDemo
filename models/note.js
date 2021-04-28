@@ -21,6 +21,11 @@ const noteSchema = new mongoose.Schema({
     required: true,
   },
   important: Boolean,
+  // inference on who created this note (attention: 2-way inference)
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }
 })
 
 // 格式化Mongoose返回的对象：修改Schema 的 toJSON 方法
